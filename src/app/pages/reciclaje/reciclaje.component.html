@@ -1,0 +1,41 @@
+@for(lugar of lugaresReciclaje; track lugar.id){
+    <div class="prin" *ngFor="let lugar of lugaresReciclaje; let last = last">
+        <div class="reciclaje-p">
+            <div class="mapa">
+                <iframe
+                    [src]="obtenerMapa(lugar.ubicacion)" 
+                    width="300"
+                    height="350"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+                <p>{{ lugar.direccion }}</p>
+            </div>
+            <div class="text" >
+                <h5>ECOHUANTA</h5>
+                <h2>{{ lugar.nombre }}</h2>
+                <p>{{ lugar.descripcion }}</p>
+                <div class="services">
+                    <div>
+                        <h3>Materiales Aceptados</h3>
+                        <p>{{ lugar.materialesAceptados.join(', ') }}</p>
+                    </div>
+                    <div>
+                        <h3>Horario</h3>
+                        <p>{{ lugar.horario }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carrusel">
+            <img src="/z-1-f-1.jpg" alt="">
+            <img src="/z-1-f-1.jpg" alt="">
+            <img src="/z-1-f-1.jpg" alt="">
+            <img src="/z-1-f-1.jpg" alt="">
+        </div >
+        <hr *ngIf="!last">
+    </div>
+}
+
+

@@ -1,0 +1,95 @@
+
+.prin{
+    margin: 50px 180px 0px 180px;
+}
+
+.reciclaje-p{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 60px;
+    padding: 0%;
+    
+}
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reciclaje-p iframe{
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.text h5{
+    margin: 0%;
+    padding: 0%;
+    color: #4baf47;
+
+}
+
+.text h2{
+    margin: 10px 0%;
+    padding: 0%;
+    font-size: 42px;
+    color: white;
+}
+
+.text p{
+    color: grey;
+    margin-top: 30px;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.services div{
+    background-color: #4baf47;
+    width: 40%;
+    padding: 0 20px;
+    border-radius: 5px;
+    height: 150px;
+
+}
+
+.services div p{
+    color: white;
+    margin: 20px 0%;
+}
+
+.carrusel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.carrusel img{
+    width: 23%;
+    border-radius: 10px;
+    margin-bottom: 80px;
+}   
+
+.mapa p{
+    color: white;
+}
+
+hr{
+    background-color: #018234;
+    height: 2px;
+    width: 90%;
+    margin: 0px 55px;
+    border: none;
+}
+
+

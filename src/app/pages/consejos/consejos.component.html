@@ -1,0 +1,21 @@
+<div>
+
+</div>
+
+<div class="prin">
+    <h1>Consejos para el reciclaje</h1>
+    <div class="cards">
+        @for(consejo of consejosR; track consejo.id){
+            <div  class="card">
+                <h2>{{ consejo.titulo }}</h2>
+                <img src="{{ consejo.imagen }}" alt="{{ consejo.titulo }}">
+                <ul>
+                    @for(pauta of consejo.pautas; track pauta){
+                        <li>{{ pauta }}</li>
+                    }
+                </ul>
+                <p>{{ consejo.consejo }}</p>
+            </div>
+         }
+    </div>
+</div>

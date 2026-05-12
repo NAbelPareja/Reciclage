@@ -1,0 +1,30 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 100px 120px;
+}
+
+
+.home h1{
+    font-size: 72px;
+    font-weight: bold;
+    margin: 0%;
+}
+
+.home p{
+    font-size: 20px;
+    color: #4CAF50;
+}
+
+.home h6{
+    font-size: 16px;
+}
+
+.redes{
+    display: flex;
+    gap: 20px;
+    margin-left: 100px;
+    
+}

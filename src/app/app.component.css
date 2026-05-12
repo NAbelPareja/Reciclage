@@ -1,0 +1,49 @@
+.home{
+    background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('/fondo-p.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    color: white;
+}
+
+
+.reportes app-header,
+.reciclaje app-header,
+.consejos app-header {
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('/fondo-header.jpg') center/cover no-repeat;
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.consejos,
+.reciclaje,
+.reportes{
+  background: 
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url('/arpit-dhore-c63gWd2_XwY-unsplash.jpg') center/cover no-repeat;
+    height: calc(100% + 30px);
+}
+
+
+
+.layout {
+  min-height: 100vh;
+  transition: background 0.5s ease, opacity 0.3s ease;
+}
+
+.fade {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

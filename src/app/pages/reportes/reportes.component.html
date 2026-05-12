@@ -1,0 +1,37 @@
+
+<h2>Reportar problema</h2>
+
+<div class="reporte">
+    <div class="form">
+        <label for="opciones">Tipo de reporte:</label>
+        <select [(ngModel)]="nuevoReporte.tipo" name="opciones" id="opciones">
+          <option value="Maleza">Maleza</option>
+          <option value="reciduos  domiciliarios">reciduos  domiciliarios</option>
+          <option value="RCD ( residuos de construcción domiciliaria) ">RCD ( residuos de construcción domiciliaria) </option>
+          <option value="Residuos hospitalarios ">Residuos hospitalarios </option>
+          <option value="Otros">Otros </option>
+        </select>
+        <div class="ubicacion">
+          <input [(ngModel)]="nuevoReporte.ubicacion" type="text" placeholder="Ubicación">
+          <button (click)="obtenerUbicacion()" id="btn-ubi">Obtener ubicación</button>
+        </div>  
+        <div class="archivo">
+          <input type="file" accept="image/*" (change)="capturarImagen($event)">
+        </div>
+        <textarea [(ngModel)]="nuevoReporte.descripcion" name="" id="" placeholder="Descripción del problema"></textarea>
+        <button (click)="agregarReporte()" id="btn-guardar">Guardar reporte</button>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    @for(r of reportes(); track r.id){
+      <div *ngFor="let r of reportes()" class="form" id="reporte-guardado">
+        <p><strong>{{ r.tipo }}</strong></p>
+        <p>{{ r.ubicacion }}</p>
+        <img *ngIf="imagenPreview" [src]="imagenPreview" width="250">
+        <p>{{ r.descripcion }}</p>
+
+        <button (click)="enviarWhatsApp(r)" id="btn-whatsapp">Enviar por WhatsApp</button>
+      </div>
+    }
+</div>

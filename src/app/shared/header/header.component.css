@@ -1,0 +1,41 @@
+.nav-p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 100px;
+    border: 1px solid black;
+
+}
+
+.navegacion{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+nav a{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 50px;
+    font-size: 1.2rem;
+}
+
+.logo{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+
+
+
