@@ -31,3 +31,17 @@
     color: #4CAF50;
     cursor: pointer;
 }
+
+@media (max-width: 500px){
+    .footer{
+        padding: 5px 10px;
+    }
+
+    .term{
+        gap: 10px;
+    }
+
+    .dere, .term h4{
+        font-size: 12px;
+    }
+}

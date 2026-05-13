@@ -31,5 +31,21 @@
     padding: 20px 150px;
 }
 
+@media (max-width: 500px){
+    .prin {
+    font-size: 60%;
+    }
+
+    .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 10px 10px;
+}
+    .card{
+        padding: 0px 10px;
+    }
+}
+
 
 
