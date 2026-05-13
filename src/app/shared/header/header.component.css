@@ -26,6 +26,11 @@ nav a{
     font-size: 1.2rem;
 }
 
+nav a:focus{
+    color: #47aa37;
+    font-size: 1.4rem;
+}
+
 .logo{
     color: white;
     display: flex;

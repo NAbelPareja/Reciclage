@@ -95,7 +95,7 @@ hr{
 
 @media (max-width: 500px){
     .prin{
-    margin: 30px 10px 0px 10px;
+    margin: 30px 0px 0px 0px;
     width: 100%;
     }
 
@@ -117,5 +117,47 @@ hr{
         font-size: 80%;
     }
 
-}
+    body{
 
+  overflow-x:hidden;
+
+}
+    .services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+    
+}
+    .services div{
+    width: 30%;
+    padding: 0 10px;
+
+}
+    .carrusel{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
+    width: 90%;
+
+}
+    .carrusel img{
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}   
+    hr{
+    width: 60%;
+    margin: 0px 55px;
+    border: none;
+}
+    .text{
+        font-size: 80%;
+        width: 90%;
+        margin: 10px;
+    }
+    
+
+}
