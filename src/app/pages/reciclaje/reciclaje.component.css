@@ -93,3 +93,28 @@ hr{
 }
 
 
+@media (max-width: 500px){
+    .prin{
+    margin: 30px 10px 0px 10px;
+    width: 100%;
+    }
+
+    .reciclaje-p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0%;
+    
+    }
+
+    .reciclaje-p iframe{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+    .text h2, .text h5, .text p, .services div p, .mapa p{
+        font-size: 80%;
+    }
+}
+

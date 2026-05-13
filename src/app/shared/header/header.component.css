@@ -37,5 +37,45 @@ nav a{
     height: 80px;
 }
 
+@media (max-width: 500px){
+
+    .nav-p{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        padding:0;
+        margin: 0%; 
+        font-size: 60%;
+    }
+
+    .navegacion {
+        display: grid;
+        grid-template-columns: 1fr ;
+        padding: 0%;
+    }
+
+    .navegacion nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        row-gap: 15px;
+        padding:0;
+    }
+
+    nav a{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 5px;
+}
+    .logo{
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+    .logo img, .logo h1 {
+    width: 60%;
+    
+}
 
 
+}
