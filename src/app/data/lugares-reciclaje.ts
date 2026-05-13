@@ -33,10 +33,10 @@ export const lugaresReciclaje: LugarReciclage[] = [
       'Lunes a sábado de 8:00 a.m. a 6:00 p.m.',
 
     fotos: [
-      '/assets/reciclaje/gringo1.jpg',
-      '/assets/reciclaje/gringo2.jpg',
-      '/assets/reciclaje/gringo3.jpg',
-      '/assets/reciclaje/gringo4.jpg'
+      '/reciclage/reciclage1/img1.jpeg',
+      '/z-1-f-2.jpg',
+      '/z-1-f-3.jpg',
+      '/z-1-f-4.jpg'
     ]
   },
 
@@ -62,10 +62,10 @@ export const lugaresReciclaje: LugarReciclage[] = [
       'Horario de atención municipal',
 
     fotos: [
-      '/assets/reciclaje/muni1.jpg',
-      '/assets/reciclaje/muni2.jpg',
-      '/assets/reciclaje/muni3.jpg',
-      '/assets/reciclaje/muni4.jpg'
+      '/z-1-f-1.jpg',
+      '/z-1-f-2.jpg',
+      '/z-1-f-3.jpg',
+      '/z-1-f-4.jpg'
     ]
   },
 
@@ -91,10 +91,10 @@ export const lugaresReciclaje: LugarReciclage[] = [
       'Horario sujeto al establecimiento',
 
     fotos: [
-      '/assets/reciclaje/claro1.jpg',
-      '/assets/reciclaje/claro2.jpg',
-      '/assets/reciclaje/claro3.jpg',
-      '/assets/reciclaje/claro4.jpg'
+      '/z-1-f-1.jpg',
+      '/z-1-f-2.jpg',
+      '/z-1-f-3.jpg',
+      '/z-1-f-4.jpg'
     ]
   }
 

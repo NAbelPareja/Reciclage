@@ -141,15 +141,17 @@ hr{
     grid-template-columns: 2fr 2fr;
     gap: 10px;
     width: 90%;
+    justify-items: center;
+    margin: auto;
 
 }
     .carrusel img{
-    width: 70%;
+    width: 90%;
     border-radius: 10px;
     margin-bottom: 10px;
 }   
     hr{
-    width: 60%;
+    width: 70%;
     margin: 0px 55px;
     border: none;
 }

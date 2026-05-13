@@ -1,5 +1,5 @@
 @for(lugar of lugaresReciclaje; track lugar.id){
-    <div class="prin" *ngFor="let lugar of lugaresReciclaje; let last = last">
+    <div class="prin">
         <div class="reciclaje-p">
             <div class="mapa">
                 <iframe
@@ -29,12 +29,12 @@
             </div>
         </div>
         <div class="carrusel">
-            <img src="/z-1-f-1.jpg" alt="">
+            <img [src]="lugar.fotos[0]" alt="">
             <img src="/z-1-f-1.jpg" alt="">
             <img src="/z-1-f-1.jpg" alt="">
             <img src="/z-1-f-1.jpg" alt="">
         </div >
-        <hr *ngIf="!last">
+        <hr >
     </div>
 }
 
