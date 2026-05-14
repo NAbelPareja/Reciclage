@@ -130,5 +130,20 @@ capturarImagen(event: any){
 
     reader.readAsDataURL(archivo);
   }
+  }
+  // Tamaño del texta area, para que crezca automaticamente
+
+
+  autoResize(textarea2: HTMLTextAreaElement) {
+
+  textarea2.style.height = "auto";
+  
+  textarea2.style.height = textarea2.scrollHeight + "px";
+  if (textarea2.scrollHeight >= 100) {
+    textarea2.style.height = "100px";
+  };
+  console.log(textarea2.scrollHeight);
+
 }
+
 }

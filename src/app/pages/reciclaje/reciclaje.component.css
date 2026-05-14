@@ -122,18 +122,22 @@ hr{
   overflow-x:hidden;
 
 }
+    .text p,  .text h5, .text h2{
+    margin: 10px 10px;
+}
     .services{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin: 20px 0px;
     gap: 20px;
     
 }
     .services div{
-    width: 30%;
-    padding: 0 10px;
+    width: 35%;
+    padding: 0px 10px;
+    height: 120px;
 
 }
     .carrusel{
@@ -152,7 +156,7 @@ hr{
 }   
     hr{
     width: 70%;
-    margin: 0px 55px;
+    margin: 20px 55px 0px 55px;
     border: none;
 }
     .text{

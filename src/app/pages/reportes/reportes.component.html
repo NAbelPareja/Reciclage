@@ -18,7 +18,12 @@
         <div class="archivo">
           <input type="file" accept="image/*" (change)="capturarImagen($event)">
         </div>
-        <textarea [(ngModel)]="nuevoReporte.descripcion" name="" id="" placeholder="Descripción del problema"></textarea>
+        <textarea #txt
+          (input)="autoResize(txt)" 
+          [(ngModel)]="nuevoReporte.descripcion" 
+          name="" 
+          id="" 
+          placeholder="Descripción del problema"></textarea>
         <button (click)="agregarReporte()" id="btn-guardar">Guardar reporte</button>
     </div>
     <hr>
@@ -29,7 +34,7 @@
         <p><strong>{{ r.tipo }}</strong></p>
         <p>{{ r.ubicacion }}</p>
         <img *ngIf="imagenPreview" [src]="imagenPreview" width="250">
-        <p>{{ r.descripcion }}</p>
+        <p >{{ r.descripcion }}</p>
 
         <button (click)="enviarWhatsApp(r)" id="btn-whatsapp">Enviar por WhatsApp</button>
       </div>
