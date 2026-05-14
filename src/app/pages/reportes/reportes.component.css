@@ -55,6 +55,10 @@ h2{
     border: 1px solid #032a21;
     width: 100%;
     height: 40px;
+}
+#cargando input{
+    font-size: 16px;
+    font-weight: bold;
     
 }
 

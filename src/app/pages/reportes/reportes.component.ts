@@ -71,9 +71,12 @@ export class ReportesComponent {
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 
   window.open(url, '_blank');
-}
+} 
+
+  loanding = false;
 
   obtenerUbicacion() {
+    this.loanding = true;
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       (posicion) => {
@@ -82,17 +85,20 @@ export class ReportesComponent {
 
         console.log(`Latitud: ${lat}, Longitud: ${lng}`);
         this.obtenerDireccion(lat, lng);
+        this.loanding = false;
 
       },
 
       (error) => {
         alert(error.message);
         alert('No se pudo obtener la ubicación');
+        this.loanding = false;
       }
 
     );
   } else {
     alert('Tu navegador no soporta geolocalización');
+    this.loanding = false;
   }
   }
 

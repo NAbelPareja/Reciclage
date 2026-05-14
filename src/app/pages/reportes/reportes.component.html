@@ -11,10 +11,18 @@
           <option value="Residuos hospitalarios ">Residuos hospitalarios </option>
           <option value="Otros">Otros </option>
         </select>
-        <div class="ubicacion">
+        @if(this.loanding){
+          <div class="ubicacion" id="cargando">
+          <input [(ngModel)]="nuevoReporte.ubicacion" type="text" placeholder="cargando ubicación...">
+          <button (click)="obtenerUbicacion()" id="btn-ubi">Obtener ubicación</button>
+        </div> 
+        }@else {
+          <div class="ubicacion">
           <input [(ngModel)]="nuevoReporte.ubicacion" type="text" placeholder="Ubicación">
           <button (click)="obtenerUbicacion()" id="btn-ubi">Obtener ubicación</button>
-        </div>  
+        </div>
+        }
+         
         <div class="archivo">
           <input type="file" accept="image/*" (change)="capturarImagen($event)">
         </div>
