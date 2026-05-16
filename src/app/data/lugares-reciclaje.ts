@@ -13,7 +13,7 @@ export const lugaresReciclaje: LugarReciclage[] = [
 
   {
     id:1,
-    nombre: 'MULTINEGOCIOS EL GRINGO E.I.R.L',
+    nombre: 'ASOCIACIÓN DE RECICLADORES BELLA ESMERALDA',
 
     ubicacion: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.628213900616!2d-74.2616163250823!3d-12.93160048738011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910d834f6fee4d4b%3A0x23df702104094d0c!2sMULTINEGOCIOS%20EL%20GRINGO%20E.I.R.L!5e0!3m2!1ses-419!2spe!4v1778255506490!5m2!1ses-419!2spe',
     direccion: 'Jr. Base Sur N.° 206, salida Huancayo, Chaquiwayjo, Huanta',
@@ -23,10 +23,8 @@ export const lugaresReciclaje: LugarReciclage[] = [
 
     materialesAceptados: [
       'Cartón',
-      'Plástico',
-      'Chatarra',
-      'Metales',
-      'Residuos reciclables'
+      'Papel Bond',
+      'Cuadernos',
     ],
 
     horario:
@@ -59,7 +57,7 @@ export const lugaresReciclaje: LugarReciclage[] = [
     ],
 
     horario:
-      'Horario de atención municipal',
+      'Solo en campañas',
 
     fotos: [
       '/z-1-f-1.jpg',
@@ -69,33 +67,5 @@ export const lugaresReciclaje: LugarReciclage[] = [
     ]
   },
 
-  {
-    id:3,
-    nombre: 'Punto de acopio RAEE - Claro Perú',
-
-    ubicacion: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.039467913452!2d-74.20415714348403!3d-13.150628027474227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91128744eca660c5%3A0x75adc634b8e823d9!2sAv.%20Amancaes%20961%2C%20Ayacucho!5e0!3m2!1ses-419!2spe!4v1778255688496!5m2!1ses-419!2spe',
-    direccion: 'Av. Amancaes 961, Ayacucho',
-
-    descripcion:
-      'Centro especializado en residuos electrónicos (RAEE). Permite reciclar aparatos electrónicos en desuso para evitar contaminación tecnológica.',
-
-    materialesAceptados: [
-      'Celulares',
-      'Cables',
-      'Cargadores',
-      'Baterías',
-      'Pequeños aparatos electrónicos'
-    ],
-
-    horario:
-      'Horario sujeto al establecimiento',
-
-    fotos: [
-      '/z-1-f-1.jpg',
-      '/z-1-f-2.jpg',
-      '/z-1-f-3.jpg',
-      '/z-1-f-4.jpg'
-    ]
-  }
 
 ];
